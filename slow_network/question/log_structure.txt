@@ -1,0 +1,17 @@
+STRUCTURE OF EACH LOG LINE
+
+    $id $remote_addr [$time_local] $unix_timestamp "$request" $status "$http_user_agent" $request_time
+    
+
+EXPLANATION OF FIELDS
+
+    id: Positive integer that uniquely identifies the log line.
+    remote_addr: IP address of the client.
+    time_local: Local time in the Common Log Format.
+    unix_timestamp: Unix time in seconds, with milliseconds resolution.
+    request: Full original request line.
+    status: Response status.
+    http_user_agent: The "user-agent" field in the request header.
+    request_time: Request processing time in seconds, with a milliseconds resolution. 
+        Time elapsed between the first bytes were read from the client and the log write 
+        after the last bytes were sent to the client.

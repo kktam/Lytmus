@@ -1,0 +1,14 @@
+This folder contains input files to test your program.
+You may modify these files or add your own - they are purely for debugging.
+
+Each JSON file contains a dictionary with input parameters to your program.
+For example:
+    {
+        "input": 0
+    }
+
+To test your program using the JSON file run:
+    node test_answer.js ./inputs/divide_by_zero.json
+
+This calls answer() in answer.js as follows:
+    answer(input)

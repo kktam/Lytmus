@@ -1,0 +1,14 @@
+This folder contains input files to test your program.
+You may modify these files or add your own - they are purely for debugging.
+
+Each JSON file contains a dictionary with input parameters to your program.
+For example:
+    {
+        "log_path": "/home/candidate/candidate_files/js/inputs/large.log"
+    }
+
+To test your program using the JSON file run:
+    node test_answer.js ./inputs/large.json
+
+This calls analyze_requests() in answer.js as follows:
+    analyze_requests(log_path)
